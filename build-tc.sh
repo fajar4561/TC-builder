@@ -51,7 +51,7 @@ msg "$LLVM_NAME: Building LLVM..."
 tg_post_msg "<b>$LLVM_NAME: Building LLVM. . .</b>"
 ./build-llvm.py \
 	--clang-vendor "$LLVM_NAME" \
-	--projects "clang;lld;polly" \
+	--projects "clang;compiler-rt;lld;libcxx;libcxxabi;polly" \
 	--targets "ARM;AArch64" \
 	--shallow-clone \
 	--incremental \
