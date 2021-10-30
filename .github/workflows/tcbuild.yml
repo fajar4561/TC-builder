@@ -33,7 +33,7 @@ jobs:
         GH_USERNAME: ${{ secrets.GH_USERNAME }}
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        GH_PUSH_REPO_URL: ${{ secrets.GH_PUSH_REPO_UR }}
+        GH_PUSH_REPO_URL: ${{ secrets.GH_PUSH_REPO_URL }}
     - uses: yanzay/notify-telegram@v0.1.0
       if: always()
       with:
