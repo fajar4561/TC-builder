@@ -34,3 +34,9 @@ jobs:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         GH_PUSH_REPO_URL: ${{ secrets.GH_PUSH_REPO_UR }}
+    - uses: yanzay/notify-telegram@v0.1.0
+      if: always()
+      with:
+        chat: ${{ secrets.TG_CHAT_ID }} # user id or channel name secret
+        token: ${{ secrets.TG_TOKEN }} # token secret
+        status: ${{ job.status }} # do not modify this line
