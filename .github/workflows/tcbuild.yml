@@ -1,4 +1,4 @@
-name: ARM GCC+LLD Build
+name: Clang Build
 
 on:
   push:
